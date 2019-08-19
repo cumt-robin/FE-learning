@@ -1,7 +1,7 @@
 {
   "name": "fe-learning",
   "version": "1.0.0",
-  "description": "a tutorial for most front end engineer written by Tusi",
+  "description": "This is a tutorial for most front end engineer written by Tusi.",
   "main": "index.js",
   "scripts": {
     "start": "gitbook serve",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cumt-robin/FE-guide.git"
+    "url": "git+https://github.com/cumt-robin/FE-learning.git"
   },
   "keywords": [
     "tutorial",
@@ -21,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/cumt-robin/FE-learning/issues"
   },
-  "homepage": "https://github.com/cumt-robin/FE-learning#readme",
-  "dependencies": {
-    "gitbook-plugin-back-to-top-button": "^0.1.4",
-    "gitbook-plugin-hide-element": "0.0.4"
-  }
+  "homepage": "https://github.com/cumt-robin/FE-learning#readme"
 }
