@@ -88,7 +88,7 @@
 var gitalk = new Gitalk({
     clientID: "c17498a9a9fa6e17b36a",
     clientSecret: "556df0480f8f48e142432f50273ea149cf206c07",
-    repo: "https://github.com/cumt-robin/FE-learning",
+    repo: "FE-learning",
     owner: "cumt-robin",
     admin: ["cumt-robin"],
     id: decodeURIComponent(location.pathname)
