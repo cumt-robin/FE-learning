@@ -72,7 +72,7 @@ var gitalk = new Gitalk({
     repo: "https://github.com/cumt-robin/FE-learning",
     owner: "cumt-robin",
     admin: ["cumt-robin"],
-    id: decodeURIComponent(location.pathname).length
+    id: decodeURIComponent(location.pathname)
 });
 gitalk.render("gitalk-container");
 </script>

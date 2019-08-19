@@ -402,7 +402,20 @@ xmlhttp.open(<span class="hljs-string">&quot;POST&quot;</span>, <span class="hlj
 <p><code>xmlhttp.send()</code>&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x643A;&#x5E26;<code>POST</code>&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x5199;&#x6CD5;&#x4E5F;&#x662F;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#xFF0C;&#x793A;&#x4F8B;&#xFF1A;</p>
 <pre><code class="lang-javascript">xmlhttp.send(<span class="hljs-string">&apos;username=Tusi&amp;password=999999&apos;</span>)
 </code></pre>
-
+<p><div id="gitalk-container"></div></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    clientID: "c17498a9a9fa6e17b36a",
+    clientSecret: "556df0480f8f48e142432f50273ea149cf206c07",
+    repo: "https://github.com/cumt-robin/FE-learning",
+    owner: "cumt-robin",
+    admin: ["cumt-robin"],
+    id: decodeURIComponent(location.pathname)
+});
+gitalk.render("gitalk-container");
+</script>
                                 
                                 </section>
                             
@@ -441,7 +454,7 @@ xmlhttp.open(<span class="hljs-string">&quot;POST&quot;</span>, <span class="hlj
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"原生js创建ajax请求的步骤","level":"2.4.1","depth":2,"next":{"title":"ajax设置超时及监听超时事件","level":"2.4.2","depth":2,"path":"doc/ajax设置超时及监听事件.md","ref":"doc/ajax设置超时及监听事件.md","articles":[]},"previous":{"title":"Ajax","level":"2.4","depth":1,"ref":"","articles":[{"title":"原生js创建ajax请求的步骤","level":"2.4.1","depth":2,"path":"doc/原生js创建ajax请求的步骤.md","ref":"doc/原生js创建ajax请求的步骤.md","articles":[]},{"title":"ajax设置超时及监听超时事件","level":"2.4.2","depth":2,"path":"doc/ajax设置超时及监听事件.md","ref":"doc/ajax设置超时及监听事件.md","articles":[]},{"title":"ajax获取文件上传进度","level":"2.4.3","depth":2,"path":"doc/ajax获取文件上传进度.md","ref":"doc/ajax获取文件上传进度.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-learning"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Tutorial For Front End Engineer","language":"zh-hans","links":{"sidebar":{"Tusi博客":"https://blog.wbjiang.cn"}},"gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"doc/原生js创建ajax请求的步骤.md","mtime":"2019-08-19T07:33:03.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-19T08:21:30.299Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"原生js创建ajax请求的步骤","level":"2.4.1","depth":2,"next":{"title":"ajax设置超时及监听超时事件","level":"2.4.2","depth":2,"path":"doc/ajax设置超时及监听事件.md","ref":"doc/ajax设置超时及监听事件.md","articles":[]},"previous":{"title":"Ajax","level":"2.4","depth":1,"ref":"","articles":[{"title":"原生js创建ajax请求的步骤","level":"2.4.1","depth":2,"path":"doc/原生js创建ajax请求的步骤.md","ref":"doc/原生js创建ajax请求的步骤.md","articles":[]},{"title":"ajax设置超时及监听超时事件","level":"2.4.2","depth":2,"path":"doc/ajax设置超时及监听事件.md","ref":"doc/ajax设置超时及监听事件.md","articles":[]},{"title":"ajax获取文件上传进度","level":"2.4.3","depth":2,"path":"doc/ajax获取文件上传进度.md","ref":"doc/ajax获取文件上传进度.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-learning"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Tutorial For Front End Engineer","language":"zh-hans","links":{"sidebar":{"Tusi博客":"https://blog.wbjiang.cn"}},"gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"doc/原生js创建ajax请求的步骤.md","mtime":"2019-08-19T08:36:11.206Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-19T08:37:43.576Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
