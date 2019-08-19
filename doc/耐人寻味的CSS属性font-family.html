@@ -21,11 +21,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -354,7 +354,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -406,7 +406,20 @@
 <h1 id="font-family&#x63A8;&#x8350;">font-family&#x63A8;&#x8350;</h1>
 <pre><code class="lang-css"><span class="hljs-selector-tag">font-family</span>: &quot;<span class="hljs-selector-tag">Helvetica</span> <span class="hljs-selector-tag">Neue</span>&quot;, <span class="hljs-selector-tag">Helvetica</span>, &quot;<span class="hljs-selector-tag">PingFang</span> <span class="hljs-selector-tag">SC</span>&quot;, <span class="hljs-selector-tag">Tahoma</span>, &quot;<span class="hljs-selector-tag">Hiragino</span> <span class="hljs-selector-tag">Sans</span> <span class="hljs-selector-tag">GB</span>&quot;, &quot;<span class="hljs-selector-tag">Heiti</span> <span class="hljs-selector-tag">SC</span>&quot;, <span class="hljs-selector-tag">Arial</span>, &quot;<span class="hljs-selector-tag">Microsoft</span> <span class="hljs-selector-tag">YaHei</span>&quot;, &quot;<span class="hljs-selector-tag">WenQuanYi</span> <span class="hljs-selector-tag">Micro</span> <span class="hljs-selector-tag">Hei</span>&quot;, <span class="hljs-selector-tag">sans-serif</span>;
 </code></pre>
-
+<p><div id="gitalk-container"></div></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    clientID: "c17498a9a9fa6e17b36a",
+    clientSecret: "556df0480f8f48e142432f50273ea149cf206c07",
+    repo: "https://github.com/cumt-robin/FE-learning",
+    owner: "cumt-robin",
+    admin: ["cumt-robin"],
+    id: decodeURIComponent(location.pathname).length
+});
+gitalk.render("gitalk-container");
+</script>
                                 
                                 </section>
                             
@@ -445,7 +458,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"耐人寻味的CSS属性font-family","level":"2.2.2","depth":2,"next":{"title":"Javascript","level":"2.3","depth":1,"ref":"","articles":[]},"previous":{"title":"耐人寻味的CSS属性white-space","level":"2.2.1","depth":2,"path":"doc/耐人寻味的CSS属性white-space.md","ref":"doc/耐人寻味的CSS属性white-space.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Tutorial For Front End Engineer","language":"zh-hans","links":{"sidebar":{"Tusi博客":"https://blog.wbjiang.cn"}},"gitbook":"*"},"file":{"path":"doc/耐人寻味的CSS属性font-family.md","mtime":"2019-08-19T07:27:10.557Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-19T07:33:00.849Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"耐人寻味的CSS属性font-family","level":"2.2.2","depth":2,"next":{"title":"Javascript","level":"2.3","depth":1,"ref":"","articles":[]},"previous":{"title":"耐人寻味的CSS属性white-space","level":"2.2.1","depth":2,"path":"doc/耐人寻味的CSS属性white-space.md","ref":"doc/耐人寻味的CSS属性white-space.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-learning"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Tutorial For Front End Engineer","language":"zh-hans","links":{"sidebar":{"Tusi博客":"https://blog.wbjiang.cn"}},"gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"doc/耐人寻味的CSS属性font-family.md","mtime":"2019-08-19T08:21:10.044Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-19T08:21:30.299Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -463,19 +476,15 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
