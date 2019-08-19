@@ -22,5 +22,8 @@
     "url": "https://github.com/cumt-robin/FE-learning/issues"
   },
   "homepage": "https://github.com/cumt-robin/FE-learning#readme",
-  "dependencies": {}
+  "dependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-hide-element": "0.0.4"
+  }
 }

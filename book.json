@@ -1,6 +1,20 @@
 {
-    "root": "src",
+    "root": "./src",
     "author": "Tusi",
     "title": "Tutorial For Front End Engineer",
-    "language": "zh"
+    "language": "zh-hans",
+    "plugins": [
+        "hide-element",
+        "back-to-top-button"
+    ],
+    "pluginsConfig": {
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        }
+    },
+    "links": {
+        "sidebar": {
+            "Tusi博客": "https://blog.wbjiang.cn"
+        }
+    }
 }
