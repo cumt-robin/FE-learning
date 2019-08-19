@@ -12,6 +12,8 @@
 * Javascript
 * Ajax
   * [原生js创建ajax请求的步骤](doc/原生js创建ajax请求的步骤.md)
+  * [ajax设置超时及监听超时事件](doc/ajax设置超时及监听事件.md)
+  * [ajax获取文件上传进度](doc/ajax获取文件上传进度.md)
 
 
 ## 前端进阶
