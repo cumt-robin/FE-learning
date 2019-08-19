@@ -61,3 +61,18 @@
 ```css
 font-family: "Helvetica Neue", Helvetica, "PingFang SC", Tahoma, "Hiragino Sans GB", "Heiti SC", Arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 ```
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    clientID: "c17498a9a9fa6e17b36a",
+    clientSecret: "556df0480f8f48e142432f50273ea149cf206c07",
+    repo: "https://github.com/cumt-robin/FE-learning",
+    owner: "cumt-robin",
+    admin: ["cumt-robin"],
+    id: decodeURIComponent(location.pathname).length
+});
+gitalk.render("gitalk-container");
+</script>
