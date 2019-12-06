@@ -81,6 +81,8 @@
 
 妈呀，还是挺难记的，多多复习！
 
+![欢迎关注](https://qncdn.wbjiang.cn/%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8.png)
+
 <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
