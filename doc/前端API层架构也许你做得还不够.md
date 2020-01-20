@@ -402,7 +402,7 @@ new CopyWebpackPlugin([
 - [用初中数学知识撸一个canvas环形进度条]( https://juejin.im/post/5dc626125188253aec025a60 )
 
 
-![欢迎关注](https://qncdn.wbjiang.cn/%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8.png)
+![欢迎关注](https://qncdn.wbjiang.cn/yuanchudao_poster1.png)
 
 <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">

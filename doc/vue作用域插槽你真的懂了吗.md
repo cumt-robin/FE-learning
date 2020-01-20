@@ -133,7 +133,7 @@ Commodity组件通过$emit像父组件传递clickCommodity事件，并携带商�
 
 > 总结一下，作用域插槽适合的场景是至少包含三级以上的组件层级，是一种优秀的组件化方案！
 
-![欢迎关注](https://qncdn.wbjiang.cn/%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8.png)
+![欢迎关注](https://qncdn.wbjiang.cn/yuanchudao_poster1.png)
 
 <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
