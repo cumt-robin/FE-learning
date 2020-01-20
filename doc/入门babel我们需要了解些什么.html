@@ -1,0 +1,1024 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>入门babel，我们需要了解些什么 · Tutorial For Front End Engineer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Tusi">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://blog.wbjiang.cn" target="_blank" class="custom-link">Tusi博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://pan.baidu.com/s/1ns_xy2mV1Q49K9-GmUQmDA" target="_blank" class="custom-link">个人整理的前端知识树(提取码wqgg)</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端基础知识</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="块级元素和行内元素.html">
+            
+                <a href="块级元素和行内元素.html">
+            
+                    
+                    块级元素和行内元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="耐人寻味的CSS属性white-space.html">
+            
+                <a href="耐人寻味的CSS属性white-space.html">
+            
+                    
+                    耐人寻味的CSS属性white-space
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="耐人寻味的CSS属性font-family.html">
+            
+                <a href="耐人寻味的CSS属性font-family.html">
+            
+                    
+                    耐人寻味的CSS属性font-family
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Javascript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    Ajax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="原生js创建ajax请求的步骤.html">
+            
+                <a href="原生js创建ajax请求的步骤.html">
+            
+                    
+                    原生js创建ajax请求的步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="ajax设置超时及监听事件.html">
+            
+                <a href="ajax设置超时及监听事件.html">
+            
+                    
+                    ajax设置超时及监听超时事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="ajax获取文件上传进度.html">
+            
+                <a href="ajax获取文件上传进度.html">
+            
+                    
+                    ajax获取文件上传进度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    原理性知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    渲染引擎
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    JS引擎
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    运行时环境
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    如何实现一个符合Promise/A+规范的Promise
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="vue项目中引入iconfont.html">
+            
+                <a href="vue项目中引入iconfont.html">
+            
+                    
+                    vue项目中引入iconfont
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="vue作用域插槽你真的懂了吗.html">
+            
+                <a href="vue作用域插槽你真的懂了吗.html">
+            
+                    
+                    vue作用域插槽，你真的懂了吗
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="从一道面试题简单谈谈发布订阅和观察者模式.html">
+            
+                <a href="从一道面试题简单谈谈发布订阅和观察者模式.html">
+            
+                    
+                    从一道面试题简单谈谈发布订阅和观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    架构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="前端API层架构也许你做得还不够.html">
+            
+                <a href="前端API层架构也许你做得还不够.html">
+            
+                    
+                    前端API层架构，也许你做得还不够
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    造轮子
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="用初中数学知识撸一个canvas环形进度条.html">
+            
+                <a href="用初中数学知识撸一个canvas环形进度条.html">
+            
+                    
+                    用初中数学知识撸一个canvas环形进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                    编译相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.6.1" data-path="入门babel我们需要了解些什么.html">
+            
+                <a href="入门babel我们需要了解些什么.html">
+            
+                    
+                    入门babel，我们需要了解些什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">部署运维</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    Sheel
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="自动化部署的一小步前端搬砖的一大步.html">
+            
+                <a href="自动化部署的一小步前端搬砖的一大步.html">
+            
+                    
+                    自动化部署的一小步，前端搬砖的一大步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >入门babel，我们需要了解些什么</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;&#x6211;&#x4ECE;&#x5DE5;&#x4F5C;&#x5F00;&#x59CB;&#x5C31;&#x4E00;&#x76F4;&#x5728;&#x63A5;&#x89E6;<code>babel</code>&#xFF0C;&#x7136;&#x800C;&#x5BF9;&#x4E8E;<code>babel</code>&#x5E76;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x6E05;&#x6670;&#x7684;&#x8BA4;&#x8BC6;&#xFF0C;&#x53EA;&#x77E5;&#x9053;<code>babel</code>&#x662F;&#x7528;&#x4E8E;&#x7F16;&#x8BD1;<code>javascript</code>&#xFF0C;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x80FD;&#x4F7F;&#x7528;&#x8D85;&#x524D;&#x7684;<code>ES6+</code>&#x8BED;&#x6CD5;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x3002;&#x81EA;&#x5DF1;&#x914D;&#x7F6E;<code>babel</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x603B;&#x662F;&#x9047;&#x5230;&#x5F88;&#x591A;&#x56F0;&#x60D1;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x5C31;&#x4EE5;<code>babel@7</code>&#x4E3A;&#x4F8B;&#xFF0C;&#x91CD;&#x65B0;&#x7B80;&#x5355;&#x8BA4;&#x8BC6;&#x4E0B;<code>babel</code>&#x3002;</p>
+<h1 id="&#x4EC0;&#x4E48;&#x662F;babel">&#x4EC0;&#x4E48;&#x662F;babel</h1>
+<blockquote>
+<p>Babel &#x662F;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x94FE;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5C06; ECMAScript 2015+ &#x7248;&#x672C;&#x7684;&#x4EE3;&#x7801;&#x8F6C;&#x6362;&#x4E3A;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x7684; JavaScript &#x8BED;&#x6CD5;&#xFF0C;&#x4EE5;&#x4FBF;&#x80FD;&#x591F;&#x8FD0;&#x884C;&#x5728;&#x5F53;&#x524D;&#x548C;&#x65E7;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6216;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#x4E2D;&#x3002;</p>
+</blockquote>
+<p><code>babel</code>&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E00;&#x822C;&#x662F;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>.babelrc</code>&#xFF0C;<code>babel@7</code>&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x652F;&#x6301;<code>babel.config.js</code>&#xFF0C;&#x4E0D;&#x59A8;&#x7528;<code>babel.config.js</code>&#x8BD5;&#x8BD5;&#x3002;</p>
+<h1 id="&#x6CF0;&#x62F3;&#x8B66;&#x544A;">&#x6CF0;&#x62F3;&#x8B66;&#x544A;</h1>
+<p><img src="https://qncdn.wbjiang.cn/%E6%B3%B0%E6%8B%B3%E8%AD%A6%E5%91%8A.jpg" alt="&#x6CF0;&#x62F3;&#x8B66;&#x544A;"></p>
+<p><code>babel</code>&#x63D0;&#x4F9B;&#x7684;&#x57FA;&#x7840;&#x80FD;&#x529B;&#x662F;&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#xFF0C;&#x6216;&#x8005;&#x53EB;&#x8BED;&#x6CD5;&#x7CD6;&#x8F6C;&#x6362;&#x3002;&#x6BD4;&#x5982;&#x628A;&#x7BAD;&#x5934;&#x51FD;&#x6570;&#x8F6C;&#x4E3A;&#x666E;&#x901A;&#x7684;<code>function</code>&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;<code>ES6</code>&#x65B0;&#x5F15;&#x5165;&#x7684;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x662F;&#x9ED8;&#x8BA4;&#x4E0D;&#x505A;&#x5904;&#x7406;&#x7684;&#xFF0C;&#x5982;<code>Promise</code>, <code>Map</code>, <code>Set</code>, <code>Reflect</code>, <code>Proxy</code>&#x7B49;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x548C;&#x65B0;&#x7684;<code>API</code>&#xFF0C;&#x9700;&#x8981;&#x7528;&#x57AB;&#x7247;<code>polyfill</code>&#x5904;&#x7406;&#xFF0C;<code>core-js</code>&#x6709;&#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x6240;&#x4EE5;<code>babel</code>&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x4E3B;&#x8981;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x6839;&#x636E;&#x4F60;&#x7684;&#x914D;&#x7F6E;&#x505A;&#x8BED;&#x6CD5;&#x7CD6;&#x89E3;&#x6790;&#xFF0C;&#x8F6C;&#x6362;</li>
+<li>&#x6839;&#x636E;&#x4F60;&#x7684;&#x914D;&#x7F6E;&#x585E;&#x5165;&#x57AB;&#x7247;<code>polyfill</code></li>
+</ol>
+<p>&#x5982;&#x679C;&#x4E0D;&#x641E;&#x6E05;&#x695A;&#x8FD9;&#x70B9;&#xFF0C;<code>babel</code>&#x7684;&#x6587;&#x6863;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x5F88;&#x5403;&#x529B;&#xFF01;</p>
+<h1 id="&#x5FC5;&#x987B;&#x638C;&#x63E1;&#x7684;&#x6982;&#x5FF5;">&#x5FC5;&#x987B;&#x638C;&#x63E1;&#x7684;&#x6982;&#x5FF5;</h1>
+<h2 id="plugins">plugins</h2>
+<p><code>babel</code>&#x9ED8;&#x8BA4;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;&#xFF0C;&#x9700;&#x8981;&#x501F;&#x52A9;&#x63D2;&#x4EF6;&#x6765;&#x5B8C;&#x6210;&#x8BED;&#x6CD5;&#x7684;&#x89E3;&#x6790;&#xFF0C;&#x8F6C;&#x6362;&#xFF0C;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x63D2;&#x4EF6;&#x5206;&#x4E3A;&#x8BED;&#x6CD5;&#x63D2;&#x4EF6;<code>Syntax Plugins</code>&#x548C;&#x8F6C;&#x6362;&#x63D2;&#x4EF6;<code>Transform Plugins</code>&#x3002;</p>
+<h3 id="&#x8BED;&#x6CD5;&#x63D2;&#x4EF6;">&#x8BED;&#x6CD5;&#x63D2;&#x4EF6;</h3>
+<p>&#x8BED;&#x6CD5;&#x63D2;&#x4EF6;&#x4EC5;&#x5141;&#x8BB8;<code>babel</code>&#x89E3;&#x6790;&#x8BED;&#x6CD5;&#xFF0C;&#x4E0D;&#x505A;&#x8F6C;&#x6362;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x8F6C;&#x6362;&#x63D2;&#x4EF6;&#x3002;</p>
+<h3 id="&#x8F6C;&#x6362;&#x63D2;&#x4EF6;">&#x8F6C;&#x6362;&#x63D2;&#x4EF6;</h3>
+<p>&#x8F6C;&#x6362;&#x63D2;&#x4EF6;&#xFF0C;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x8D1F;&#x8D23;&#x7684;&#x662F;&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#x3002;</p>
+<blockquote>
+<p>&#x8F6C;&#x6362;&#x63D2;&#x4EF6;&#x5C06;&#x542F;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x8BED;&#x6CD5;&#x63D2;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;&#x67D0;&#x4E2A;&#x8BED;&#x6CD5;&#x7684;&#x8F6C;&#x6362;&#x63D2;&#x4EF6;&#xFF0C;&#x5219;&#x4E0D;&#x5FC5;&#x518D;&#x53E6;&#x884C;&#x6307;&#x5B9A;&#x76F8;&#x5E94;&#x7684;&#x8BED;&#x6CD5;&#x63D2;&#x4EF6;&#x4E86;&#x3002;</p>
+</blockquote>
+<p>&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#x63D2;&#x4EF6;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x4ECE;<code>ES3</code>&#x5230;<code>ES2018</code>&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x4E00;&#x4E9B;&#x5B9E;&#x9A8C;&#x6027;&#x7684;&#x8BED;&#x6CD5;&#x548C;&#x76F8;&#x5173;&#x6846;&#x67B6;&#x751F;&#x6001;&#x4E0B;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x90FD;&#x6709;&#x76F8;&#x5173;&#x7684;&#x63D2;&#x4EF6;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#x63D2;&#x4EF6;&#x4E3B;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x6709;&#xFF1A;</p>
+<p>&#x5229;&#x7528;<code>@babel/parser</code>&#x8FDB;&#x884C;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x548C;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#xFF0C;&#x8F6C;&#x6362;&#x4E3A;<code>AST</code> <strong>--&gt;</strong> &#x5229;&#x7528;<code>babel-traverse</code>&#x8FDB;&#x884C;<code>AST</code>&#x8F6C;&#x6362;&#xFF08;&#x6D89;&#x53CA;&#x6DFB;&#x52A0;&#xFF0C;&#x66F4;&#x65B0;&#x53CA;&#x79FB;&#x9664;&#x8282;&#x70B9;&#x7B49;&#x64CD;&#x4F5C;&#xFF09; <strong>--&gt;</strong> &#x5229;&#x7528;<code>babel-generator</code>&#x751F;&#x6210;&#x76EE;&#x6807;&#x73AF;&#x5883;<code>js</code>&#x4EE3;&#x7801;</p>
+<h3 id="&#x63D2;&#x4EF6;&#x7B80;&#x5199;">&#x63D2;&#x4EF6;&#x7B80;&#x5199;</h3>
+<p><code>babel@7</code>&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x5199;&#x5F62;&#x5F0F;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5B8C;&#x6574;&#x5199;&#x6CD5;</span>
+plugins: [
+    <span class="hljs-string">&quot;babel-plugin-transform-runtime&quot;</span>
+]
+<span class="hljs-comment">// &#x7B80;&#x5199;&#x5F62;&#x5F0F;</span>
+plugins: [
+    <span class="hljs-string">&quot;transform-runtime&quot;</span>
+]
+</code></pre>
+<p>&#x800C;&#x5728;<code>babel@7</code>&#x4E4B;&#x540E;&#xFF0C;&#x7531;&#x4E8E;<code>plugins</code>&#x90FD;&#x5F52;&#x5230;&#x4E86;<code>@babel</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6240;&#x4EE5;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x4E5F;&#x6709;&#x6240;&#x6539;&#x53D8;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// babel@7&#x63D2;&#x4EF6;&#x5B8C;&#x6574;&#x5199;&#x6CD5;</span>
+plugins: [
+    <span class="hljs-string">&quot;@babel/plugin-transform-runtime&quot;</span>
+]
+<span class="hljs-comment">// &#x7B80;&#x5199;&#x5F62;&#x5F0F;&#xFF0C;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x76EE;&#x5F55;</span>
+plugins: [
+    <span class="hljs-string">&quot;@babel/transform-runtime&quot;</span>
+]
+</code></pre>
+<h3 id="&#x63D2;&#x4EF6;&#x5F00;&#x53D1;">&#x63D2;&#x4EF6;&#x5F00;&#x53D1;</h3>
+<p>&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x4E5F;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x63D2;&#x4EF6;&#xFF0C;&#x5B98;&#x7F51;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x5C0F;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    visitor: {
+      Identifier(path) {
+        <span class="hljs-keyword">const</span> name = path.node.name;
+        <span class="hljs-comment">// reverse the name: JavaScript -&gt; tpircSavaJ</span>
+        path.node.name = name
+          .split(<span class="hljs-string">&quot;&quot;</span>)
+          .reverse()
+          .join(<span class="hljs-string">&quot;&quot;</span>);
+      },
+    },
+  };
+}
+</code></pre>
+<h2 id="presets">presets</h2>
+<p><code>preset</code>&#xFF0C;&#x610F;&#x4E3A;&#x201C;&#x9884;&#x8BBE;&#x201D;&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x7EC4;<code>plugin</code>&#x7684;&#x96C6;&#x5408;&#x3002;&#x6211;&#x7684;&#x7406;&#x89E3;&#x662F;&#xFF0C;&#x6839;&#x636E;&#x8FD9;&#x9879;&#x914D;&#x7F6E;&#xFF0C;<code>babel</code>&#x4F1A;&#x4E3A;&#x4F60;&#x9884;&#x8BBE;&#xFF08;&#x6216;&#x79F0;&#x4E3A;&#x201C;&#x5185;&#x7F6E;&#x201D;&#xFF09;&#x597D;&#x4E00;&#x4E9B;<code>ECMA</code>&#x6807;&#x51C6;&#xFF0C;&#x8349;&#x6848;&#xFF0C;&#x6216;&#x63D0;&#x6848;&#x4E0B;&#x7684;&#x8BED;&#x6CD5;&#x6216;<code>API</code>&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x4F60;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x4E00;&#x4E9B;&#x8BED;&#x6CD5;&#x89C4;&#x5219;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x90FD;&#x662F;&#x57FA;&#x4E8E;<code>plugin</code>&#x5B9E;&#x73B0;&#x7684;&#x3002;</p>
+<h3 id="&#x5B98;&#x65B9;presets">&#x5B98;&#x65B9;presets</h3>
+<ul>
+<li><a href="https://babeljs.io/docs/en/babel-preset-env" target="_blank">@babel/preset-env</a></li>
+<li><a href="https://babeljs.io/docs/en/babel-preset-flow" target="_blank">@babel/preset-flow</a></li>
+<li><a href="https://babeljs.io/docs/en/babel-preset-react" target="_blank">@babel/preset-react</a></li>
+<li><a href="https://babeljs.io/docs/en/babel-preset-typescript" target="_blank">@babel/preset-typescript</a></li>
+</ul>
+<h3 id="babelpreset-env">@babel/preset-env</h3>
+<p><code>@babel/preset-env</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x667A;&#x80FD;&#x7684;&#x9884;&#x8BBE;&#xFF0C;&#x6839;&#x636E;&#x914D;&#x7F6E;&#x7684;<code>options</code>&#x6765;&#x51B3;&#x5B9A;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x80FD;&#x529B;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5173;&#x952E;&#x7684;<code>options</code>&#x6709;&#x54EA;&#x4E9B;&#x3002;</p>
+<ul>
+<li>targets</li>
+</ul>
+<p>&#x63CF;&#x8FF0;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x8981;&#x652F;&#x6301;&#x7684;&#x76EE;&#x6807;&#x73AF;&#x5883;&#x3002;&#x5199;&#x6CD5;&#x6E90;&#x4E8E;&#x5F00;&#x6E90;&#x9879;&#x76EE;<a href="https://github.com/browserslist/browserslist" target="_blank">browserslist</a>&#x3002;&#x8FD9;&#x9879;&#x914D;&#x7F6E;&#x5E94;&#x8BE5;&#x6839;&#x636E;&#x4F60;&#x9700;&#x8981;&#x517C;&#x5BB9;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x800C;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E0D;&#x5FC5;&#x4E0E;&#x5176;&#x4ED6;&#x4EBA;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;targets&quot;</span>: {
+  <span class="hljs-string">&quot;browsers&quot;</span>: [<span class="hljs-string">&quot;&gt; 1%&quot;</span>, <span class="hljs-string">&quot;last 2 versions&quot;</span>, <span class="hljs-string">&quot;not ie &lt;= 9&quot;</span>]
+}
+</code></pre>
+<ul>
+<li>loose</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x76F4;&#x8BD1;&#x4E3A;&#x201C;&#x677E;&#x6563;&#x6A21;&#x5F0F;&#x201D;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>false</code>&#xFF0C;&#x5373;&#x4E3A;<code>normal</code>&#x6A21;&#x5F0F;&#x3002;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;<code>normal</code>&#x6A21;&#x5F0F;&#x8F6C;&#x6362;&#x51FA;&#x6765;&#x7684;&#x4EE3;&#x7801;&#x66F4;&#x8D34;&#x5408;<code>ES6</code>&#x98CE;&#x683C;&#xFF0C;&#x66F4;&#x4E25;&#x8C28;&#xFF1B;&#x800C;<code>loose</code>&#x6A21;&#x5F0F;&#x66F4;&#x50CF;&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x7684;&#x5199;&#x6CD5;&#x3002;&#x4EE5;<code>class</code>&#x5199;&#x6CD5;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x5199;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>class</code>&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestBabelLoose</span> </span>{
+    constractor(name) {
+        <span class="hljs-keyword">this</span>.name = name
+    }
+    getName() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name
+    }
+}
+
+<span class="hljs-keyword">new</span> TestBabelLoose(<span class="hljs-string">&apos;Tusi&apos;</span>)
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>normal</code>&#x6A21;&#x5F0F;&#x7F16;&#x8BD1;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_classCallCheck</span>(<span class="hljs-params">instance, Constructor</span>) </span>{ <span class="hljs-keyword">if</span> (!(instance <span class="hljs-keyword">instanceof</span> Constructor)) { <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">&quot;Cannot call a class as a function&quot;</span>); } }
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_defineProperties</span>(<span class="hljs-params">target, props</span>) </span>{ <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; props.length; i++) { <span class="hljs-keyword">var</span> descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || <span class="hljs-literal">false</span>; descriptor.configurable = <span class="hljs-literal">true</span>; <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;value&quot;</span> <span class="hljs-keyword">in</span> descriptor) descriptor.writable = <span class="hljs-literal">true</span>; <span class="hljs-built_in">Object</span>.defineProperty(target, descriptor.key, descriptor); } }
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_createClass</span>(<span class="hljs-params">Constructor, protoProps, staticProps</span>) </span>{ <span class="hljs-keyword">if</span> (protoProps) _defineProperties(Constructor.prototype, protoProps); <span class="hljs-keyword">if</span> (staticProps) _defineProperties(Constructor, staticProps); <span class="hljs-keyword">return</span> Constructor; }
+
+<span class="hljs-keyword">var</span> TestBabelLoose =
+<span class="hljs-comment">/*#__PURE__*/</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TestBabelLoose</span>(<span class="hljs-params"></span>) </span>{
+    _classCallCheck(<span class="hljs-keyword">this</span>, TestBabelLoose);
+  }
+
+  _createClass(TestBabelLoose, [{
+    key: <span class="hljs-string">&quot;constractor&quot;</span>,
+    value: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">constractor</span>(<span class="hljs-params">name</span>) </span>{
+      <span class="hljs-keyword">this</span>.name = name;
+    }
+  }, {
+    key: <span class="hljs-string">&quot;getName&quot;</span>,
+    value: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getName</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;
+    }
+  }]);
+
+  <span class="hljs-keyword">return</span> TestBabelLoose;
+}();
+
+<span class="hljs-keyword">new</span> TestBabelLoose(<span class="hljs-string">&apos;Tusi&apos;</span>);
+</code></pre>
+<p>&#x800C;&#x4F7F;&#x7528;<code>loose</code>&#x6A21;&#x5F0F;&#x7F16;&#x8BD1;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x66F4;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x7528;<code>prototype</code>&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x5199;&#x6CD5;&#xFF1F;</p>
+<pre><code class="lang-javascript"><span class="hljs-meta">&quot;use strict&quot;</span>;
+
+<span class="hljs-keyword">var</span> TestBabelLoose =
+<span class="hljs-comment">/*#__PURE__*/</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TestBabelLoose</span>(<span class="hljs-params"></span>) </span>{}
+
+  <span class="hljs-keyword">var</span> _proto = TestBabelLoose.prototype;
+
+  _proto.constractor = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">constractor</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+  };
+
+  _proto.getName = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getName</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;
+  };
+
+  <span class="hljs-keyword">return</span> TestBabelLoose;
+}();
+
+<span class="hljs-keyword">new</span> TestBabelLoose(<span class="hljs-string">&apos;Tusi&apos;</span>);
+</code></pre>
+<p>&#x4E2A;&#x4EBA;&#x63A8;&#x8350;&#x914D;&#x7F6E;<code>loose: false</code>&#xFF0C;&#x5F53;&#x7136;&#x4E5F;&#x8981;&#x7ED3;&#x5408;&#x9879;&#x76EE;&#x5B9E;&#x9645;&#x53BB;&#x8003;&#x91CF;&#x54EA;&#x79CD;&#x6A21;&#x5F0F;&#x66F4;&#x5408;&#x9002;&#x3002;</p>
+<ul>
+<li>modules</li>
+</ul>
+<p>&#x53EF;&#x9009;&#x503C;&#x6709;&#xFF1A;<code>&quot;amd&quot; | &quot;umd&quot; | &quot;systemjs&quot; | &quot;commonjs&quot; | &quot;cjs&quot; | &quot;auto&quot; | false</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<code>auto</code></p>
+<p>&#x8BE5;&#x914D;&#x7F6E;&#x5C06;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x628A;<code>ES6</code>&#x6A21;&#x5757;&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#x4E3A;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x7C7B;&#x578B;&#x3002;&#x6CE8;&#x610F;&#xFF0C;<code>cjs</code>&#x662F;<code>commonjs</code>&#x7684;&#x522B;&#x540D;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#x6211;&#x4E00;&#x76F4;&#x6709;&#x4E2A;&#x7591;&#x60D1;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x770B;&#x5230;&#x7684;&#x5F00;&#x6E90;&#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x57FA;&#x672C;&#x90FD;&#x662F;&#x8BBE;&#x7F6E;&#x7684;<code>modules: false</code>&#xFF1F;&#x540E;&#x9762;&#x7EC8;&#x4E8E;&#x660E;&#x767D;&#x4E86;&#xFF0C;&#x539F;&#x6765;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x76EE;&#x7684;&#x662F;&#x628A;&#x8F6C;&#x6362;&#x6A21;&#x5757;&#x7C7B;&#x578B;&#x7684;&#x5904;&#x7406;&#x6743;&#x4EA4;&#x7ED9;&#x4E86;<code>webpack</code>&#xFF0C;&#x7531;<code>webpack</code>&#x53BB;&#x5904;&#x7406;&#x8FD9;&#x9879;&#x4EFB;&#x52A1;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E5F;&#x4F7F;&#x7528;<code>webpack</code>&#xFF0C;&#x90A3;&#x4E48;&#x8BBE;&#x7F6E;<code>modules: false</code>&#x5C31;&#x6CA1;&#x9519;&#x5566;&#x3002;</p>
+<ul>
+<li>useBuiltIns</li>
+</ul>
+<p>&#x53EF;&#x9009;&#x503C;&#x6709;&#xFF1A;<code>&quot;entry&quot; | &quot;usage&quot; | false</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<code>false</code></p>
+<p>&#x8BE5;&#x914D;&#x7F6E;&#x5C06;&#x51B3;&#x5B9A;<code>@babel/preset-env</code>&#x5982;&#x4F55;&#x53BB;&#x5904;&#x7406;<code>polyfill</code></p>
+<p><code>&quot;entry&quot;</code></p>
+<p>&#x5982;&#x679C;<code>useBuiltIns</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>&quot;entry&quot;</code>&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B89;&#x88C5;<code>@babel/polyfill</code>&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x5F15;&#x5165;<code>@babel/polyfill</code>&#xFF0C;&#x6700;&#x7EC8;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;<code>core-js</code>&#x6A21;&#x5757;&#x548C;<code>regenerator-runtime/runtime</code>&#x3002;&#x5BF9;&#x4E86;&#xFF0C;<code>@babel/polyfill</code>&#x4E5F;&#x4E0D;&#x4F1A;&#x5904;&#x7406;<code>stage &lt;=3</code>&#x7684;&#x63D0;&#x6848;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7528;&#x4E00;&#x6BB5;&#x5305;&#x542B;&#x4E86;<code>Promise</code>&#x7684;&#x4EE3;&#x7801;&#x6765;&#x505A;&#x4E0B;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;@babel/polyfill&quot;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestBabelLoose</span> </span>{
+    constractor(name) {
+        <span class="hljs-keyword">this</span>.name = name
+    }
+    getName() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name
+    }
+    testPromise() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+            resolve()
+        })
+    }
+}
+<span class="hljs-keyword">new</span> TestBabelLoose(<span class="hljs-string">&apos;Tusi&apos;</span>)
+</code></pre>
+<p>&#x4F46;&#x662F;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x8C8C;&#x4F3C;&#x5F15;&#x5165;&#x4E86;&#x5F88;&#x591A;<code>polyfill</code>&#x554A;&#xFF0C;&#x4E00;&#x5171;149&#x4E2A;&#xFF0C;&#x600E;&#x4E48;&#x4E0D;&#x662F;&#x6309;&#x9700;&#x5F15;&#x5165;&#x5462;&#xFF1F;&#x55EF;...&#x4F60;&#x9700;&#x8981;&#x5F80;&#x4E0B;&#x770B;&#x4E86;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.array.map&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.map&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.promise&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es7.promise.finally&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;regenerator-runtime/runtime&quot;</span>;
+<span class="hljs-comment">// &#x6B64;&#x5904;&#x7701;&#x7565;&#x4E86;144&#x4E2A;&#x5305;&#x3002;&#x3002;&#x3002;</span>
+</code></pre>
+<p><code>&quot;usage&quot;</code></p>
+<p>&#x5982;&#x679C;<code>useBuiltIns</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>&quot;usage&quot;</code>&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x9700;&#x5B89;&#x88C5;<code>@babel/polyfill</code>&#xFF0C;<code>babel</code>&#x4F1A;&#x6839;&#x636E;&#x4F60;&#x5B9E;&#x9645;&#x7528;&#x5230;&#x7684;&#x8BED;&#x6CD5;&#x7279;&#x6027;&#x5BFC;&#x5165;&#x76F8;&#x5E94;&#x7684;<code>polyfill</code>&#xFF0C;&#x6709;&#x70B9;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x7684;&#x610F;&#x601D;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x4E0A;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6539;&#x7528;useBuiltIns: &apos;usage&apos;&#xFF0C;&#x6700;&#x7EC8;&#x8F6C;&#x6362;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EA;&#x6709;&#x56DB;&#x4E2A;&#x6A21;&#x5757;</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.object.define-property&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.promise&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.object.to-string&quot;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;core-js/modules/es6.function.name&quot;</span>;
+</code></pre>
+<p>&#x914D;&#x7F6E;<code>&quot;usage&quot;</code>&#x65F6;&#xFF0C;&#x5E38;&#x642D;&#x914D;<code>corejs</code>&#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;<code>core-js</code>&#x4E3B;&#x7248;&#x672C;&#x53F7;</p>
+<pre><code class="lang-javascript">useBuiltIns: <span class="hljs-string">&quot;usage&quot;</span>,
+corejs: <span class="hljs-number">3</span>
+</code></pre>
+<p><code>false</code></p>
+<p>&#x5982;&#x679C;<code>useBuiltIns</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#xFF0C;<code>babel</code>&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x4E3A;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x52A0;&#x4E0A;<code>polyfill</code>&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x628A;<code>import &quot;@babel/polyfill&quot;</code>&#x8F6C;&#x4E3A;&#x4E00;&#x4E2A;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;<code>core-js</code>&#x6A21;&#x5757;&#x3002;</p>
+<ul>
+<li><code>@babel/preset-env</code>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#xFF0C;&#x81EA;&#x5DF1;&#x6162;&#x6162;&#x53BB;&#x6298;&#x817E;&#x5427;......</li>
+</ul>
+<h3 id="stage-x">stage-x</h3>
+<p><code>stage-x</code>&#x63CF;&#x8FF0;&#x7684;&#x662F;<code>ECMA</code>&#x6807;&#x51C6;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x6839;&#x636E;<code>TC39</code>&#xFF08;<code>ECMA</code>39&#x53F7;&#x6280;&#x672F;&#x4E13;&#x5BB6;&#x59D4;&#x5458;&#x4F1A;&#xFF09;&#x7684;&#x63D0;&#x6848;&#x5212;&#x5206;&#x754C;&#x9650;&#xFF0C;<code>stage-x</code>&#x5927;&#x81F4;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;</p>
+<ul>
+<li>stage-0&#xFF1A;<code>strawman</code>&#xFF0C;&#x8FD8;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x60F3;&#xFF0C;&#x53EA;&#x80FD;&#x7531;<code>TC39</code>&#x6210;&#x5458;&#x6216;&#x8005;<code>TC39</code>&#x8D21;&#x732E;&#x8005;&#x63D0;&#x51FA;&#x3002;</li>
+<li>stage-1&#xFF1A;<code>proposal</code>&#xFF0C;&#x63D0;&#x6848;&#x9636;&#x6BB5;&#xFF0C;&#x6BD4;&#x8F83;&#x6B63;&#x5F0F;&#x7684;&#x63D0;&#x8BAE;&#xFF0C;&#x53EA;&#x80FD;&#x7531;<code>TC39</code>&#x6210;&#x5458;&#x53D1;&#x8D77;&#xFF0C;&#x8FD9;&#x4E2A;&#x63D0;&#x6848;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x987B;&#x6709;&#x6B63;&#x5F0F;&#x7684;&#x4E66;&#x9762;&#x63CF;&#x8FF0;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x63D0;&#x51FA;&#x4E00;&#x4E9B;&#x6848;&#x4F8B;&#xFF0C;&#x4EE5;&#x53CA;<code>API</code>&#xFF0C;&#x8BED;&#x6CD5;&#xFF0C;&#x7B97;&#x6CD5;&#x7684;&#x96CF;&#x5F62;&#x3002;</li>
+<li>stage-2&#xFF1A;<code>draft</code>&#xFF0C;&#x8349;&#x6848;&#xFF0C;&#x6709;&#x4E86;&#x521D;&#x59CB;&#x89C4;&#x8303;&#xFF0C;&#x5FC5;&#x987B;&#x5BF9;&#x529F;&#x80FD;&#x7684;&#x8BED;&#x6CD5;&#x548C;&#x8BED;&#x4E49;&#x8FDB;&#x884C;&#x6B63;&#x5F0F;&#x63CF;&#x8FF0;&#xFF0C;&#x5305;&#x62EC;&#x4E00;&#x4E9B;&#x5B9E;&#x9A8C;&#x6027;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x51FA;&#x4E00;&#x4E9B;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x3002;</li>
+<li>stage-3&#xFF1A;<code>condidate</code>&#xFF0C;&#x5019;&#x9009;&#xFF0C;&#x8BE5;&#x63D0;&#x8BAE;&#x57FA;&#x672C;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#xFF0C;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x5B9E;&#x8DF5;&#x9A8C;&#x8BC1;&#xFF0C;&#x7528;&#x6237;&#x53CD;&#x9988;&#x53CA;&#x9A8C;&#x6536;&#x6D4B;&#x8BD5;&#x901A;&#x8FC7;&#x3002;</li>
+<li>stage-4&#xFF1A;<code>finished</code>&#xFF0C;&#x5DF2;&#x5B8C;&#x6210;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;<code>Test262</code>&#x9A8C;&#x6536;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x7EB3;&#x5165;&#x5230;<code>ECMA</code>&#x6807;&#x51C6;&#x4E2D;&#x3002;&#x6BD4;&#x5982;&#x4E00;&#x4E9B;<code>ES2016</code>&#xFF0C;<code>ES2017</code>&#x7684;&#x8BED;&#x6CD5;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x88AB;&#x5408;&#x5165;<code>ECMA</code>&#x6807;&#x51C6;&#x4E2D;&#x4E86;&#x3002;</li>
+</ul>
+<p>&#x6709;&#x5174;&#x8DA3;&#x4E86;&#x89E3;&#x7684;&#x53EF;&#x4EE5;&#x5173;&#x6CE8;<a href="https://github.com/tc39/ecma262" target="_blank">ecma262</a>&#x3002;</p>
+<blockquote>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;babel@7&#x5DF2;&#x7ECF;&#x79FB;&#x9664;&#x4E86;stage-x&#x7684;preset&#xFF0C;stage-4&#x90E8;&#x5206;&#x7684;&#x529F;&#x80FD;&#x5DF2;&#x7ECF;&#x88AB;@babel/preset-env&#x96C6;&#x6210;&#x4E86;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;stage &lt;= 3&#x90E8;&#x5206;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x81EA;&#x884C;&#x901A;&#x8FC7;plugins&#x7EC4;&#x88C5;&#x3002;</p>
+</blockquote>
+<pre><code>As of v7.0.0-beta.55, we&apos;ve removed Babel&apos;s Stage presets.
+Please consider reading our blog post on this decision at
+https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets
+for more details. TL;DR is that it&apos;s more beneficial in the long run to explicitly add which proposals to use.
+If you want the same configuration as before:
+{
+  &quot;plugins&quot;: [
+    // Stage 2
+    [&quot;@babel/plugin-proposal-decorators&quot;, { &quot;legacy&quot;: true }],
+    &quot;@babel/plugin-proposal-function-sent&quot;,
+    &quot;@babel/plugin-proposal-export-namespace-from&quot;,
+    &quot;@babel/plugin-proposal-numeric-separator&quot;,
+    &quot;@babel/plugin-proposal-throw-expressions&quot;,
+    // Stage 3
+    &quot;@babel/plugin-syntax-dynamic-import&quot;,
+    &quot;@babel/plugin-syntax-import-meta&quot;,
+    [&quot;@babel/plugin-proposal-class-properties&quot;, { &quot;loose&quot;: false }],
+    &quot;@babel/plugin-proposal-json-strings&quot;
+  ]
+}
+</code></pre><h3 id="&#x81EA;&#x5DF1;&#x5199;preset">&#x81EA;&#x5DF1;&#x5199;preset</h3>
+<p>&#x5982;&#x9700;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;<code>preset</code>&#xFF0C;&#x53EA;&#x9700;&#x5BFC;&#x51FA;&#x4E00;&#x4EFD;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x901A;&#x8FC7;&#x5199;<code>plugins</code>&#x6765;&#x5B9E;&#x73B0;<code>preset</code>&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x81EA;&#x5DF1;&#x7684;<code>preset</code>&#x4E2D;&#x5305;&#x542B;&#x7B2C;&#x4E09;&#x65B9;&#x7684;<code>preset</code>&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-comment">// &#x589E;&#x52A0;presets&#x9879;&#x53BB;&#x5305;&#x542B;&#x522B;&#x4EBA;&#x7684;preset</span>
+    presets: [
+      <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;@babel/preset-env&quot;</span>)
+    ],
+    <span class="hljs-comment">// &#x7528;&#x63D2;&#x4EF6;&#x6765;&#x5305;&#x88C5;&#x6210;&#x81EA;&#x5DF1;&#x7684;preset</span>
+    plugins: [
+      <span class="hljs-string">&quot;pluginA&quot;</span>,
+      <span class="hljs-string">&quot;pluginB&quot;</span>,
+      <span class="hljs-string">&quot;pluginC&quot;</span>
+    ]
+  };
+}
+</code></pre>
+<h1 id="babelruntime">@babel/runtime</h1>
+<p><code>babel</code>&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x5B83;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x51B3;&#x5B9A;&#x4E86;&#x4F60;&#x4EA7;&#x51FA;&#x7684;&#x5305;&#x7684;&#x5927;&#x5C0F;&#xFF01;&#x4E00;&#x822C;&#x9002;&#x5408;&#x4E8E;&#x7EC4;&#x4EF6;&#x5E93;&#x5F00;&#x53D1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5E94;&#x7528;&#x7EA7;&#x7684;&#x4EA7;&#x54C1;&#x5F00;&#x53D1;&#x3002;</p>
+<h2 id="&#x8BF4;&#x660E;">&#x8BF4;&#x660E;</h2>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x4E2A;&#x4E1C;&#x897F;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;<code>@babel/runtime</code>&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x8BED;&#x6CD5;&#x8F6C;&#x6362;&#x5305;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x88AB;&#x6309;&#x9700;&#x5F15;&#x5165;&#x3002;&#x53E6;&#x4E00;&#x4E2A;&#x662F;<code>@babel/plugin-transform-runtime</code>&#xFF0C;&#x5B83;&#x662F;&#x63D2;&#x4EF6;&#xFF0C;&#x8D1F;&#x8D23;&#x5728;<code>babel</code>&#x8F6C;&#x6362;&#x4EE3;&#x7801;&#x65F6;&#x5206;&#x6790;&#x8BCD;&#x6CD5;&#x8BED;&#x6CD5;&#xFF0C;&#x5206;&#x6790;&#x51FA;&#x4F60;&#x771F;&#x6B63;&#x7528;&#x5230;&#x7684;<code>ES6+</code>&#x8BED;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x5728;<code>transformed code</code>&#x4E2D;&#x5F15;&#x5165;&#x5BF9;&#x5E94;&#x7684;<code>@babel/runtime</code>&#x4E2D;&#x7684;&#x5305;&#xFF0C;&#x5B9E;&#x73B0;&#x6309;&#x9700;&#x5F15;&#x5165;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x7528;&#x5230;&#x4E86;&#x5C55;&#x5F00;&#x8FD0;&#x7B97;&#x7B26;<code>...</code>&#xFF0C;&#x90A3;&#x4E48;&#x7ECF;&#x8FC7;<code>@babel/plugin-transform-runtime</code>&#x5904;&#x7406;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/* 0 */</span>
+<span class="hljs-comment">/***/</span> (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+
+<span class="hljs-keyword">var</span> arrayWithoutHoles = __webpack_require__(<span class="hljs-number">2</span>);
+
+<span class="hljs-keyword">var</span> iterableToArray = __webpack_require__(<span class="hljs-number">3</span>);
+
+<span class="hljs-keyword">var</span> nonIterableSpread = __webpack_require__(<span class="hljs-number">4</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_toConsumableArray</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">return</span> arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
+}
+
+<span class="hljs-built_in">module</span>.exports = _toConsumableArray;
+
+<span class="hljs-comment">// EXTERNAL MODULE: ../node_modules/@babel/runtime/helpers/toConsumableArray.js</span>
+<span class="hljs-keyword">var</span> toConsumableArray = __webpack_require__(<span class="hljs-number">0</span>);
+<span class="hljs-keyword">var</span> toConsumableArray_default = <span class="hljs-comment">/*#__PURE__*/</span>__webpack_require__.n(toConsumableArray);
+</code></pre>
+<h2 id="&#x5B89;&#x88C5;&#x548C;&#x7B80;&#x5355;&#x914D;&#x7F6E;">&#x5B89;&#x88C5;&#x548C;&#x7B80;&#x5355;&#x914D;&#x7F6E;</h2>
+<p><code>@babel/runtime</code>&#x662F;&#x9700;&#x8981;&#x6309;&#x9700;&#x5F15;&#x5165;&#x5230;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#xFF0C;&#x800C;<code>@babel/plugin-transform-runtime</code>&#x662F;<code>babel</code>&#x8F85;&#x52A9;&#x63D2;&#x4EF6;&#x3002;&#x56E0;&#x6B64;&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>npm i --save @babel/runtime
+npm i --save-dev @babel/plugin-transform-runtime
+</code></pre><p>&#x914D;&#x7F6E;&#x65F6;&#x4E5F;&#x633A;&#x7B80;&#x5355;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> buildConfig = {
+    presets: [
+        <span class="hljs-comment">// ......</span>
+    ],
+    plugins: [
+        <span class="hljs-string">&quot;@babel/plugin-transform-runtime&quot;</span>
+    ],
+    <span class="hljs-comment">// ......</span>
+}
+</code></pre>
+<h2 id="babelruntime&#x548C;usebuiltins-usage&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;">@babel/runtime&#x548C;useBuiltIns: &apos;usage&apos;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</h2>
+<p>&#x4E24;&#x8005;&#x770B;&#x8D77;&#x6765;&#x90FD;&#x5B9E;&#x73B0;&#x4E86;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x4F5C;&#x7528;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x3002;<code>@babel/runtime</code>&#x5904;&#x7406;&#x7684;&#x662F;&#x8BED;&#x6CD5;&#x652F;&#x6301;&#xFF0C;&#x628A;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x7CD6;&#x8F6C;&#x4E3A;&#x76EE;&#x6807;&#x73AF;&#x5883;&#x652F;&#x6301;&#x7684;&#x8BED;&#x6CD5;&#xFF1B;&#x800C;<code>useBuiltIns: &apos;usage&apos;</code>&#x5904;&#x7406;&#x7684;&#x662F;&#x57AB;&#x7247;<code>polyfill</code>&#xFF0C;&#x4E3A;&#x65E7;&#x7684;&#x73AF;&#x5883;&#x63D0;&#x4F9B;&#x65B0;&#x7684;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;<code>Promise</code>&#x7B49;&#xFF0C;&#x63D0;&#x4F9B;&#x65B0;&#x7684;&#x539F;&#x578B;&#x65B9;&#x6CD5;&#x652F;&#x6301;&#xFF0C;&#x5982;<code>Array.prototype.includes</code>&#x7B49;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5F00;&#x53D1;&#x7684;&#x662F;&#x7EC4;&#x4EF6;&#x5E93;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x5EFA;&#x8BAE;&#x5904;&#x7406;<code>polyfill</code>&#x7684;&#xFF0C;&#x5E94;&#x8BE5;&#x7531;&#x8C03;&#x7528;&#x8005;&#x53BB;&#x505A;&#x8FD9;&#x4E9B;&#x652F;&#x6301;&#xFF0C;&#x9632;&#x6B62;&#x91CD;&#x590D;&#x7684;<code>polyfill</code>&#x3002;</p>
+<ul>
+<li>&#x5F00;&#x53D1;&#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4EC5;&#x4F7F;&#x7528;<code>@babel/plugin-transform-runtime</code></li>
+</ul>
+<p><img src="https://qncdn.wbjiang.cn/babel-runtime.png" alt="@babel/runtime&#x6253;&#x5305;&#x5206;&#x6790;"></p>
+<ul>
+<li>&#x52A0;&#x4E0A;<code>useBuiltIns: &apos;usage&apos;</code>&#xFF0C;&#x591A;&#x4E86;&#x5F88;&#x591A;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5305;&#x3002;</li>
+</ul>
+<p><img src="https://qncdn.wbjiang.cn/babel-runtime%E4%BB%A5%E5%8F%8AuseBuiltIns.png" alt="@babel/runtime + useBuiltIns: &apos;usage&apos;&#x6253;&#x5305;&#x5206;&#x6790;"></p>
+<h1 id="babel7&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;">babel@7&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;</h1>
+<p>&#x6700;&#x540E;&#x7B80;&#x5355;&#x5730;&#x63D0;&#x4E00;&#x4E0B;&#x4F7F;&#x7528;<code>babel@7</code>&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5F53;&#x7136;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5185;&#x5BB9;&#x8FD8;&#x662F;&#x8981;&#x770B;<a href="https://babeljs.io/docs/en/v7-migration" target="_blank">babel&#x5B98;&#x65B9;</a>&#x3002;</p>
+<ul>
+<li><code>babel@7</code>&#x76F8;&#x5173;&#x7684;&#x5305;&#x547D;&#x540D;&#x90FD;&#x6539;&#x4E86;&#xFF0C;&#x57FA;&#x672C;&#x662F;<code>@babel/plugin-xxx</code>, <code>@babel/preset-xxx</code>&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x5F00;&#x53D1;&#x63D2;&#x4EF6;&#x4F53;&#x7CFB;&#x65F6;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x6807;&#x51C6;&#x7684;&#x547D;&#x540D;&#x548C;&#x76EE;&#x5F55;&#x7EC4;&#x7EC7;&#x89C4;&#x8303;&#x3002;</li>
+<li>&#x5EFA;&#x8BAE;&#x7528;<code>babel.config.js</code>&#x4EE3;&#x66FF;<code>.babelrc</code>&#xFF0C;&#x8FD9;&#x5728;&#x4F60;&#x8981;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x65F6;&#x7279;&#x522B;&#x6709;&#x7528;&#x3002;</li>
+<li><code>babel@7</code>&#x5DF2;&#x7ECF;&#x79FB;&#x9664;&#x4E86;<code>stage-x</code>&#x7684;<code>presets</code>&#xFF0C;&#x4E5F;&#x4E0D;&#x9F13;&#x52B1;&#x518D;&#x4F7F;&#x7528;<code>@babel/polyfill</code>&#x3002;</li>
+<li>&#x4E0D;&#x8981;&#x518D;&#x4F7F;&#x7528;<code>babel-preset-es2015</code>, <code>babel-preset-es2016</code>&#x7B49;<code>preset</code>&#x4E86;&#xFF0C;&#x5E94;&#x8BE5;&#x7528;<code>@babel/preset-env</code>&#x4EE3;&#x66FF;&#x3002;</li>
+<li>......</li>
+</ul>
+<h1 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h1>
+<p>&#x672C;&#x4EBA;&#x53EA;&#x662F;&#x5BF9;<code>babel</code>&#x6709;&#x4E2A;&#x7C97;&#x7565;&#x7684;&#x8BA4;&#x8BC6;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x662F;&#x4E00;&#x7BC7;<code>babel</code>&#x5165;&#x95E8;&#x7684;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x63D0;&#x5230;&#x6DF1;&#x5165;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x80FD;&#x4E5F;&#x5B58;&#x5728;&#x9519;&#x8BEF;&#x4E4B;&#x5904;&#x3002;&#x81EA;&#x5DF1;&#x7FFB;&#x6765;&#x8986;&#x53BB;&#x4E5F;&#x770B;&#x8FC7;&#x597D;&#x51E0;&#x904D;<code>babel</code>&#x7684;&#x6587;&#x6863;&#x4E86;&#xFF0C;&#x4E00;&#x76F4;&#x89C9;&#x5F97;&#x6536;&#x83B7;&#x4E0D;&#x5927;&#xFF0C;&#x4E5F;&#x6CA1;&#x7406;&#x89E3;&#x5230;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#xFF0C;&#x5728;&#x4E0E;<code>webpack</code>&#x914D;&#x5408;&#x4F7F;&#x7528;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x5F88;&#x591A;&#x7591;&#x60D1;&#x6CA1;&#x641E;&#x61C2;&#x7684;&#x3002;&#x5176;&#x5B9E;&#x9519;&#x5728;&#x81EA;&#x5DF1;&#x4E0D;&#x8BE5;&#x5728;&#x590D;&#x6742;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x76F4;&#x63A5;&#x53BB;&#x5B9E;&#x8DF5;&#x3002;&#x5728;&#x6700;&#x8FD1;&#x91CD;&#x65B0;&#x5B66;&#x4E60;<code>webpack</code>&#x548C;<code>babel</code>&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x662F;&#x5F88;&#x61C2;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x59A8;&#x4ECE;&#x5199;&#x4E00;&#x4E2A;<code>hello world</code>&#x5F00;&#x59CB;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x662F;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x662F;&#x7406;&#x89E3;&#x80FD;&#x529B;&#x8D85;&#x7FA4;&#x7684;&#x5929;&#x624D;......</p>
+<hr>
+<p><a href="https://juejin.im/post/5df82fbae51d455828472a06" target="_blank">&#x9996;&#x53D1;&#x4E8E;&#x6398;&#x91D1;&#x793E;&#x533A;</a></p>
+<p><img src="https://qncdn.wbjiang.cn/yuanchudao_poster1.png" alt="&#x6B22;&#x8FCE;&#x5173;&#x6CE8;"></p>
+<p><div id="gitalk-container"></div></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    clientID: "c17498a9a9fa6e17b36a",
+    clientSecret: "556df0480f8f48e142432f50273ea149cf206c07",
+    repo: "FE-learning",
+    owner: "cumt-robin",
+    admin: ["cumt-robin"],
+    id: decodeURIComponent(location.pathname)
+});
+gitalk.render("gitalk-container");
+</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"入门babel，我们需要了解些什么","level":"3.6.1","depth":2,"next":{"title":"Sheel","level":"4.1","depth":1,"ref":"","articles":[{"title":"自动化部署的一小步，前端搬砖的一大步","level":"4.1.1","depth":2,"path":"doc/自动化部署的一小步前端搬砖的一大步.md","ref":"doc/自动化部署的一小步前端搬砖的一大步.md","articles":[]}]},"previous":{"title":"编译相关","level":"3.6","depth":1,"ref":"","articles":[{"title":"入门babel，我们需要了解些什么","level":"3.6.1","depth":2,"path":"doc/入门babel我们需要了解些什么.md","ref":"doc/入门babel我们需要了解些什么.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-learning"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Tutorial For Front End Engineer","language":"zh-hans","links":{"sidebar":{"Tusi博客":"https://blog.wbjiang.cn","个人整理的前端知识树(提取码wqgg)":"https://pan.baidu.com/s/1ns_xy2mV1Q49K9-GmUQmDA"}},"gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"doc/入门babel我们需要了解些什么.md","mtime":"2020-01-20T03:41:31.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-20T03:42:12.896Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
