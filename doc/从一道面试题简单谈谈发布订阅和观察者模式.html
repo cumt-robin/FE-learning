@@ -1,0 +1,941 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>从一道面试题简单谈谈发布订阅和观察者模式 · Tutorial For Front End Engineer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Tusi">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://blog.wbjiang.cn" target="_blank" class="custom-link">Tusi博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://hexo.wbjiang.cn/" target="_blank" class="custom-link">Tusi博客Hexo版</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://juejin.im/user/5ca40a18f265da30b8178b31/posts" target="_blank" class="custom-link">掘金专栏</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://pan.baidu.com/s/1ns_xy2mV1Q49K9-GmUQmDA" target="_blank" class="custom-link">个人整理的前端知识树(提取码wqgg)</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端基础知识</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="块级元素和行内元素.html">
+            
+                <a href="块级元素和行内元素.html">
+            
+                    
+                    块级元素和行内元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="耐人寻味的CSS属性white-space.html">
+            
+                <a href="耐人寻味的CSS属性white-space.html">
+            
+                    
+                    耐人寻味的CSS属性white-space
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="耐人寻味的CSS属性font-family.html">
+            
+                <a href="耐人寻味的CSS属性font-family.html">
+            
+                    
+                    耐人寻味的CSS属性font-family
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Javascript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    Ajax
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="原生js创建ajax请求的步骤.html">
+            
+                <a href="原生js创建ajax请求的步骤.html">
+            
+                    
+                    原生js创建ajax请求的步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="ajax设置超时及监听事件.html">
+            
+                <a href="ajax设置超时及监听事件.html">
+            
+                    
+                    ajax设置超时及监听超时事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="ajax获取文件上传进度.html">
+            
+                <a href="ajax获取文件上传进度.html">
+            
+                    
+                    ajax获取文件上传进度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    原理性知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    渲染引擎
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    JS引擎
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    运行时环境
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    如何实现一个符合Promise/A+规范的Promise
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="vue项目中引入iconfont.html">
+            
+                <a href="vue项目中引入iconfont.html">
+            
+                    
+                    vue项目中引入iconfont
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="vue作用域插槽你真的懂了吗.html">
+            
+                <a href="vue作用域插槽你真的懂了吗.html">
+            
+                    
+                    vue作用域插槽，你真的懂了吗
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.3.1" data-path="从一道面试题简单谈谈发布订阅和观察者模式.html">
+            
+                <a href="从一道面试题简单谈谈发布订阅和观察者模式.html">
+            
+                    
+                    从一道面试题简单谈谈发布订阅和观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    架构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="前端API层架构也许你做得还不够.html">
+            
+                <a href="前端API层架构也许你做得还不够.html">
+            
+                    
+                    前端API层架构，也许你做得还不够
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    造轮子
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="用初中数学知识撸一个canvas环形进度条.html">
+            
+                <a href="用初中数学知识撸一个canvas环形进度条.html">
+            
+                    
+                    用初中数学知识撸一个canvas环形进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                    编译相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="入门babel我们需要了解些什么.html">
+            
+                <a href="入门babel我们需要了解些什么.html">
+            
+                    
+                    入门babel，我们需要了解些什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">部署运维</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    shell
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="自动化部署的一小步前端搬砖的一大步.html">
+            
+                <a href="自动化部署的一小步前端搬砖的一大步.html">
+            
+                    
+                    自动化部署的一小步，前端搬砖的一大步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >从一道面试题简单谈谈发布订阅和观察者模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x4ECA;&#x5929;&#x7684;&#x8BDD;&#x9898;&#x662F;<code>javascript</code>&#x4E2D;&#x5E38;&#x88AB;&#x63D0;&#x53CA;&#x7684;&#x300C;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x548C;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#x300D;&#xFF0C;&#x63D0;&#x5230;&#x8FD9;&#xFF0C;&#x6211;&#x4E0D;&#x7531;&#x5F97;&#x60F3;&#x8D77;&#x4E86;&#x4E00;&#x6B21;&#x9762;&#x8BD5;&#x3002;&#x8BB0;&#x5F97;&#x5728;&#x53BB;&#x5E74;&#x7684;&#x4E00;&#x6B21;&#x6C42;&#x804C;&#x9762;&#x8BD5;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9762;&#x8BD5;&#x5B98;&#x95EE;&#x6211;&#xFF0C;&#x201C;&#x4F60;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x662F;&#x600E;&#x4E48;&#x5904;&#x7406;&#x975E;&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x7684;&#xFF1F;&#x201D;&#x3002;&#x6211;&#x7B54;&#x9053;&#xFF0C;&#x201C;&#x6709;&#x7528;&#x5230;<code>vuex</code>&#xFF0C;&#x6709;&#x7684;&#x573A;&#x666F;&#x4E5F;&#x4F1A;&#x7528;<code>EventEmitter2</code>&#x201D;&#x3002;&#x9762;&#x8BD5;&#x5B98;&#x7EE7;&#x7EED;&#x95EE;&#xFF0C;&#x201C;&#x90A3;&#x4F60;&#x80FD;&#x624B;&#x5199;&#x4EE3;&#x7801;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>EventEmitter</code>&#x5417;&#xFF1F;&#x201D;</p>
+<h1 id="&#x624B;&#x5199;eventemitter">&#x624B;&#x5199;EventEmitter</h1>
+<p>&#x6211;&#x72B9;&#x8C6B;&#x4E86;&#x4E00;&#x4F1A;&#x513F;&#xFF0C;&#x60F3;&#x5230;&#x4F7F;&#x7528;<code>EventEmitter2</code>&#x65F6;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7528;<code>emit</code>&#x53D1;&#x4E8B;&#x4EF6;&#xFF0C;&#x7528;<code>on</code>&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#xFF0C;&#x8FD8;&#x6709;<code>off</code>&#x9500;&#x6BC1;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x8005;&#xFF0C;<code>removeAllListeners</code>&#x9500;&#x6BC1;&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x76D1;&#x542C;&#x8005;&#xFF0C;&#x8FD8;&#x6709;<code>once</code>&#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x8003;&#x8651;&#x5230;&#x65F6;&#x95F4;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x60F3;&#x7740;&#x5C31;&#x5148;&#x5B9E;&#x73B0;&#x53D1;&#x4E8B;&#x4EF6;&#xFF0C;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#xFF0C;&#x79FB;&#x9664;&#x76D1;&#x542C;&#x8005;&#x8FD9;&#x51E0;&#x4E2A;&#x529F;&#x80FD;&#x3002;&#x5F53;&#x65F6;&#x53EF;&#x80FD;&#x6709;&#x70B9;&#x7D27;&#x5F20;&#xFF0C;&#x4E0D;&#x8FC7;&#x6709;&#x60CA;&#x65E0;&#x9669;&#xFF0C;&#x5728;&#x9762;&#x8BD5;&#x5B98;&#x7ED9;&#x4E86;&#x4E00;&#x70B9;&#x63D0;&#x793A;&#x540E;&#xFF0C;&#x987A;&#x5229;&#x5730;&#x5199;&#x51FA;&#x6765;&#x4E86;&#xFF01;&#x73B0;&#x5728;&#x628A;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x4E5F;&#x8BB0;&#x4E0B;&#x6765;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EventEmitter</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-comment">// &#x7EF4;&#x62A4;&#x4E8B;&#x4EF6;&#x53CA;&#x76D1;&#x542C;&#x8005;</span>
+        <span class="hljs-keyword">this</span>.listeners = {}
+    }
+    <span class="hljs-comment">/**
+     * &#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x8005;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     * @param {Function} cb &#x56DE;&#x8C03;&#x51FD;&#x6570;
+     */</span>
+    on(type, cb) {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.listeners[type]) {
+            <span class="hljs-keyword">this</span>.listeners[type] = []
+        }
+        <span class="hljs-keyword">this</span>.listeners[type].push(cb)
+    }
+    <span class="hljs-comment">/**
+     * &#x53D1;&#x5E03;&#x4E8B;&#x4EF6;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     * @param  {...any} args &#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x628A;emit&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x8D4B;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;
+     */</span>
+    emit(type, ...args) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.listeners[type]) {
+            <span class="hljs-keyword">this</span>.listeners[type].forEach(cb =&gt; {
+                cb(...args)
+            })
+        }
+    }
+    <span class="hljs-comment">/**
+     * &#x79FB;&#x9664;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x8005;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     * @param {Function} cb &#x56DE;&#x8C03;&#x51FD;&#x6570;
+     */</span>
+    off(type, cb) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.listeners[type]) {
+            <span class="hljs-keyword">const</span> targetIndex = <span class="hljs-keyword">this</span>.listeners[type].findIndex(item =&gt; item === cb)
+            <span class="hljs-keyword">if</span> (targetIndex !== <span class="hljs-number">-1</span>) {
+                <span class="hljs-keyword">this</span>.listeners[type].splice(targetIndex, <span class="hljs-number">1</span>)
+            }
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.listeners[type].length === <span class="hljs-number">0</span>) {
+                <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.listeners[type]
+            }
+        }
+    }
+    <span class="hljs-comment">/**
+     * &#x79FB;&#x9664;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x76D1;&#x542C;&#x8005;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     */</span>
+    offAll(type) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.listeners[type]) {
+            <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.listeners[type]
+        }
+    }
+}
+<span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E8B;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x5B9E;&#x4F8B;</span>
+<span class="hljs-keyword">const</span> ee = <span class="hljs-keyword">new</span> EventEmitter()
+<span class="hljs-comment">// &#x6CE8;&#x518C;&#x4E00;&#x4E2A;chifan&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x8005;</span>
+ee.on(<span class="hljs-string">&apos;chifan&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5403;&#x996D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x8D70;&#xFF01;&apos;</span>) })
+<span class="hljs-comment">// &#x53D1;&#x5E03;&#x4E8B;&#x4EF6;chifan</span>
+ee.emit(<span class="hljs-string">&apos;chifan&apos;</span>)
+<span class="hljs-comment">// &#x4E5F;&#x53EF;&#x4EE5;emit&#x4F20;&#x9012;&#x53C2;&#x6570;</span>
+ee.on(<span class="hljs-string">&apos;chifan&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">address, food</span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`&#x5403;&#x996D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53BB;<span class="hljs-subst">${address}</span>&#x5403;<span class="hljs-subst">${food}</span>&#xFF01;`</span>) })
+ee.emit(<span class="hljs-string">&apos;chifan&apos;</span>, <span class="hljs-string">&apos;&#x4E09;&#x98DF;&#x5802;&apos;</span>, <span class="hljs-string">&apos;&#x94C1;&#x677F;&#x996D;&apos;</span>) <span class="hljs-comment">// &#x6B64;&#x65F6;&#x4F1A;&#x6253;&#x5370;&#x4E24;&#x6761;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x4E3A;&#x524D;&#x9762;&#x6CE8;&#x518C;&#x4E86;&#x4E24;&#x4E2A;chifan&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x8005;</span>
+
+<span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x79FB;&#x9664;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;</span>
+<span class="hljs-keyword">const</span> toBeRemovedListener = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x6211;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x88AB;&#x79FB;&#x9664;&#x7684;&#x76D1;&#x542C;&#x8005;&apos;</span>) }
+ee.on(<span class="hljs-string">&apos;testoff&apos;</span>, toBeRemovedListener)
+ee.emit(<span class="hljs-string">&apos;testoff&apos;</span>)
+ee.off(<span class="hljs-string">&apos;testoff&apos;</span>, toBeRemovedListener)
+ee.emit(<span class="hljs-string">&apos;testoff&apos;</span>) <span class="hljs-comment">// &#x6B64;&#x65F6;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5DF2;&#x7ECF;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x6709;console.log&#x6253;&#x5370;&#x51FA;&#x6765;&#x4E86;</span>
+
+<span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x79FB;&#x9664;chifan&#x7684;&#x6240;&#x6709;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;</span>
+ee.offAll(<span class="hljs-string">&apos;chifan&apos;</span>)
+<span class="hljs-built_in">console</span>.log(ee) <span class="hljs-comment">// &#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x770B;&#x5230;ee.listeners&#x5DF2;&#x7ECF;&#x53D8;&#x6210;&#x7A7A;&#x5BF9;&#x8C61;&#x4E86;&#xFF0C;&#x518D;emit&#x53D1;&#x9001;chifan&#x4E8B;&#x4EF6;&#x4E5F;&#x4E0D;&#x4F1A;&#x6709;&#x53CD;&#x5E94;&#x4E86;</span>
+</code></pre>
+<p>&#x6709;&#x4E86;&#x8FD9;&#x4E2A;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x7B80;&#x5355;&#x7248;&#x672C;&#x7684;<code>EventEmitter</code>&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x7528;&#x4F9D;&#x8D56;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x5566;&#x3002;&#x5BF9;&#x4E86;&#xFF0C;<code>vue</code>&#x4E5F;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x505A;&#x8FD9;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> ee = <span class="hljs-keyword">new</span> Vue();
+ee.$on(<span class="hljs-string">&apos;chifan&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">address, food</span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`&#x5403;&#x996D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53BB;<span class="hljs-subst">${address}</span>&#x5403;<span class="hljs-subst">${food}</span>&#xFF01;`</span>) })
+ee.$emit(<span class="hljs-string">&apos;chifan&apos;</span>, <span class="hljs-string">&apos;&#x4E09;&#x98DF;&#x5802;&apos;</span>, <span class="hljs-string">&apos;&#x94C1;&#x677F;&#x996D;&apos;</span>)
+</code></pre>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5355;&#x72EC;<code>new</code>&#x4E00;&#x4E2A;<code>Vue</code>&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E8B;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x5BFC;&#x51FA;&#x7ED9;&#x5916;&#x90E8;&#x4F7F;&#x7528;&#x3002;&#x60F3;&#x6D4B;&#x8BD5;&#x7684;&#x670B;&#x53CB;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6253;&#x5F00;<code>vue</code>&#x5B98;&#x7F51;&#xFF0C;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8BD5;&#x8BD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x81EA;&#x5DF1;&#x7684;<code>vue</code>&#x9879;&#x76EE;&#x4E2D;&#x5B9E;&#x8DF5;&#x4E0B;&#x54E6;&#x3002;</p>
+<h1 id="&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;">&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;</h1>
+<p>&#x5176;&#x5B9E;&#x4ED4;&#x7EC6;&#x770B;&#x770B;&#xFF0C;<code>EventEmitter</code>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x4E8B;&#x4EF6;&#x8C03;&#x5EA6;&#x4E2D;&#x5FC3;&#x3002;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x5305;&#x542B;&#x53D1;&#x5E03;&#x8005;&#xFF0C;&#x4E8B;&#x4EF6;&#x8C03;&#x5EA6;&#x4E2D;&#x5FC3;&#xFF0C;&#x8BA2;&#x9605;&#x8005;&#x4E09;&#x4E2A;&#x89D2;&#x8272;&#x3002;&#x6211;&#x4EEC;&#x521A;&#x521A;&#x5B9E;&#x73B0;&#x7684;<code>EventEmitter</code>&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;<code>ee</code>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x8C03;&#x5EA6;&#x4E2D;&#x5FC3;&#xFF0C;&#x53D1;&#x5E03;&#x8005;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x662F;&#x677E;&#x6563;&#x8026;&#x5408;&#x7684;&#xFF0C;&#x4E92;&#x4E0D;&#x5173;&#x5FC3;&#x5BF9;&#x65B9;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x4ED6;&#x4EEC;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x4E8B;&#x4EF6;&#x672C;&#x8EAB;&#x3002;&#x53D1;&#x5E03;&#x8005;&#x501F;&#x7528;&#x4E8B;&#x4EF6;&#x8C03;&#x5EA6;&#x4E2D;&#x5FC3;&#x63D0;&#x4F9B;&#x7684;<code>emit</code>&#x65B9;&#x6CD5;&#x53D1;&#x5E03;&#x4E8B;&#x4EF6;&#xFF0C;&#x800C;&#x8BA2;&#x9605;&#x8005;&#x5219;&#x901A;&#x8FC7;<code>on</code>&#x8FDB;&#x884C;&#x8BA2;&#x9605;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x662F;&#x5F88;&#x6E05;&#x695A;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x4EE3;&#x7801;&#x6362;&#x4E0B;&#x5355;&#x8BCD;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x4E00;&#x70B9;&#x5462;&#xFF1F;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PubSub</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-comment">// &#x7EF4;&#x62A4;&#x4E8B;&#x4EF6;&#x53CA;&#x8BA2;&#x9605;&#x884C;&#x4E3A;</span>
+        <span class="hljs-keyword">this</span>.events = {}
+    }
+    <span class="hljs-comment">/**
+     * &#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x8BA2;&#x9605;&#x884C;&#x4E3A;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     * @param {Function} cb &#x56DE;&#x8C03;&#x51FD;&#x6570;
+     */</span>
+    subscribe(type, cb) {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.events[type]) {
+            <span class="hljs-keyword">this</span>.events[type] = []
+        }
+        <span class="hljs-keyword">this</span>.events[type].push(cb)
+    }
+    <span class="hljs-comment">/**
+     * &#x53D1;&#x5E03;&#x4E8B;&#x4EF6;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     * @param  {...any} args &#x53C2;&#x6570;&#x5217;&#x8868;
+     */</span>
+    publish(type, ...args) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.events[type]) {
+            <span class="hljs-keyword">this</span>.events[type].forEach(cb =&gt; {
+                cb(...args)
+            })
+        }
+    }
+    <span class="hljs-comment">/**
+     * &#x79FB;&#x9664;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x8BA2;&#x9605;&#x884C;&#x4E3A;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     * @param {Function} cb &#x56DE;&#x8C03;&#x51FD;&#x6570;
+     */</span>
+    unsubscribe(type, cb) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.events[type]) {
+            <span class="hljs-keyword">const</span> targetIndex = <span class="hljs-keyword">this</span>.events[type].findIndex(item =&gt; item === cb)
+            <span class="hljs-keyword">if</span> (targetIndex !== <span class="hljs-number">-1</span>) {
+                <span class="hljs-keyword">this</span>.events[type].splice(targetIndex, <span class="hljs-number">1</span>)
+            }
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.events[type].length === <span class="hljs-number">0</span>) {
+                <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.events[type]
+            }
+        }
+    }
+    <span class="hljs-comment">/**
+     * &#x79FB;&#x9664;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x884C;&#x4E3A;
+     * @param {String} type &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+     */</span>
+    unsubscribeAll(type) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.events[type]) {
+            <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.events[type]
+        }
+    }
+}
+</code></pre>
+<h2 id="&#x753B;&#x56FE;&#x5206;&#x6790;">&#x753B;&#x56FE;&#x5206;&#x6790;</h2>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x753B;&#x4E2A;&#x56FE;&#x52A0;&#x6DF1;&#x4E0B;&#x7406;&#x89E3;&#xFF1A;</p>
+<p><img src="https://qncdn.wbjiang.cn/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85.png" alt="&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x56FE;&#x89E3;"></p>
+<h2 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h2>
+<ul>
+<li>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x53D1;&#x5E03;&#x8005;<code>Publisher</code>&#x548C;&#x8BA2;&#x9605;&#x8005;<code>Subscriber</code>&#x6CA1;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x4ED6;&#x4EEC;&#x597D;&#x4F3C;&#x662F;&#x533F;&#x540D;&#x6D3B;&#x52A8;&#xFF0C;&#x501F;&#x52A9;&#x4E8B;&#x4EF6;&#x8C03;&#x5EA6;&#x4E2D;&#x5FC3;&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#x53D1;&#x5E03;&#x548C;&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;&#xFF0C;&#x4E92;&#x4E0D;&#x4E86;&#x89E3;&#x5BF9;&#x65B9;&#x662F;&#x8C01;&#x3002;</li>
+<li>&#x677E;&#x6563;&#x8026;&#x5408;&#xFF0C;&#x7075;&#x6D3B;&#x5EA6;&#x9AD8;&#xFF0C;&#x5E38;&#x7528;&#x4F5C;&#x4E8B;&#x4EF6;&#x603B;&#x7EBF;</li>
+<li>&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x53EF;&#x7C7B;&#x6BD4;&#x4E8E;<code>DOM</code>&#x4E8B;&#x4EF6;&#x4E2D;&#x7684;<code>dispatchEvent</code>&#x548C;<code>addEventListener</code>&#x3002;</li>
+</ul>
+<h2 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h2>
+<ul>
+<li>&#x5F53;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x65F6;&#xFF0C;&#x96BE;&#x4EE5;&#x7EF4;&#x62A4;&#xFF0C;&#x9700;&#x8981;&#x8003;&#x8651;&#x4E8B;&#x4EF6;&#x547D;&#x540D;&#x7684;&#x89C4;&#x8303;&#xFF0C;&#x4E5F;&#x8981;&#x9632;&#x8303;&#x6570;&#x636E;&#x6D41;&#x6DF7;&#x4E71;&#x3002;</li>
+</ul>
+<h1 id="&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;">&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;</h1>
+<p>&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#x4E0E;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x76F8;&#x6BD4;&#xFF0C;&#x8026;&#x5408;&#x5EA6;&#x66F4;&#x9AD8;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x54CD;&#x5E94;&#x5F0F;&#x7684;&#x6548;&#x679C;&#x3002;&#x5728;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x4E3B;&#x4F53;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x76EE;&#x6807;&#x5BF9;&#x8C61;<code>Subject</code>&#xFF0C;&#x89C2;&#x5BDF;&#x8005;<code>Observer</code>&#x3002;</p>
+<ul>
+<li>&#x89C2;&#x5BDF;&#x8005;&#x9700;<code>Observer</code>&#x8981;&#x5B9E;&#x73B0;<code>update</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F9B;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x3002;<code>update</code>&#x65B9;&#x6CD5;&#x4E2D;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x76EE;&#x6807;&#x5BF9;&#x8C61;<code>Subject</code>&#x4E5F;&#x901A;&#x5E38;&#x88AB;&#x53EB;&#x505A;&#x88AB;&#x89C2;&#x5BDF;&#x8005;&#x6216;&#x4E3B;&#x9898;&#xFF0C;&#x5B83;&#x7684;&#x804C;&#x80FD;&#x5F88;&#x5355;&#x4E00;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#xFF0C;&#x5B83;&#x53EA;&#x7BA1;&#x7406;&#x4E00;&#x79CD;&#x4E8B;&#x4EF6;&#x3002;<code>Subject</code>&#x9700;&#x8981;&#x7EF4;&#x62A4;&#x81EA;&#x8EAB;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x6570;&#x7EC4;<code>observerList</code>&#xFF0C;&#x5F53;&#x81EA;&#x8EAB;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x7684;<code>notify</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F9D;&#x6B21;&#x901A;&#x77E5;&#x6BCF;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;&#x6267;&#x884C;<code>update</code>&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<p>&#x6309;&#x7167;&#x8FD9;&#x79CD;&#x5B9A;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7248;&#x672C;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x89C2;&#x5BDF;&#x8005;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Observer</span> </span>{
+    <span class="hljs-comment">/**
+     * &#x6784;&#x9020;&#x5668;
+     * @param {Function} cb &#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x6536;&#x5230;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x901A;&#x77E5;&#x65F6;&#x6267;&#x884C;
+     */</span>
+    <span class="hljs-keyword">constructor</span>(cb){
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> cb === <span class="hljs-string">&apos;function&apos;</span>) {
+            <span class="hljs-keyword">this</span>.cb = cb
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;Observer&#x6784;&#x9020;&#x5668;&#x5FC5;&#x987B;&#x4F20;&#x5165;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#xFF01;&apos;</span>)
+        }
+    }
+    <span class="hljs-comment">/**
+     * &#x88AB;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x901A;&#x77E5;&#x65F6;&#x6267;&#x884C;
+     */</span>
+    update() {
+        <span class="hljs-keyword">this</span>.cb()
+    }
+}
+
+<span class="hljs-comment">// &#x76EE;&#x6807;&#x5BF9;&#x8C61;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-comment">// &#x7EF4;&#x62A4;&#x89C2;&#x5BDF;&#x8005;&#x5217;&#x8868;</span>
+        <span class="hljs-keyword">this</span>.observerList = []
+    }
+    <span class="hljs-comment">/**
+     * &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;
+     * @param {Observer} observer Observer&#x5B9E;&#x4F8B;
+     */</span>
+    addObserver(observer) {
+        <span class="hljs-keyword">this</span>.observerList.push(observer)
+    }
+    <span class="hljs-comment">/**
+     * &#x901A;&#x77E5;&#x6240;&#x6709;&#x7684;&#x89C2;&#x5BDF;&#x8005;
+     */</span>
+    notify() {
+        <span class="hljs-keyword">this</span>.observerList.forEach(observer =&gt; {
+            observer.update()
+        })
+    }
+}
+
+<span class="hljs-keyword">const</span> observerCallback = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x6211;&#x88AB;&#x901A;&#x77E5;&#x4E86;&apos;</span>)
+}
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> Observer(observerCallback)
+
+<span class="hljs-keyword">const</span> subject = <span class="hljs-keyword">new</span> Subject();
+subject.addObserver(observer);
+subject.notify();
+</code></pre>
+<h2 id="&#x753B;&#x56FE;&#x5206;&#x6790;">&#x753B;&#x56FE;&#x5206;&#x6790;</h2>
+<p>&#x6700;&#x540E;&#x4E5F;&#x6574;&#x5F20;&#x56FE;&#x7406;&#x89E3;&#x4E0B;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<p><img src="https://qncdn.wbjiang.cn/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E5%9B%BE%E8%A7%A3.png" alt="&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;"></p>
+<h2 id="&#x7279;&#x70B9;">&#x7279;&#x70B9;</h2>
+<ul>
+<li>&#x89D2;&#x8272;&#x5F88;&#x660E;&#x786E;&#xFF0C;&#x6CA1;&#x6709;&#x4E8B;&#x4EF6;&#x8C03;&#x5EA6;&#x4E2D;&#x5FC3;&#x4F5C;&#x4E3A;&#x4E2D;&#x95F4;&#x8005;&#xFF0C;&#x76EE;&#x6807;&#x5BF9;&#x8C61;<code>Subject</code>&#x548C;&#x89C2;&#x5BDF;&#x8005;<code>Observer</code>&#x90FD;&#x8981;&#x5B9E;&#x73B0;&#x7EA6;&#x5B9A;&#x7684;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x53CC;&#x65B9;&#x8054;&#x7CFB;&#x66F4;&#x7D27;&#x5BC6;&#xFF0C;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x52A8;&#x6027;&#x5F88;&#x5F3A;&#xFF0C;&#x81EA;&#x5DF1;&#x6536;&#x96C6;&#x548C;&#x7EF4;&#x62A4;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x5E76;&#x5728;&#x72B6;&#x6001;&#x53D8;&#x5316;&#x65F6;&#x4E3B;&#x52A8;&#x901A;&#x77E5;&#x89C2;&#x5BDF;&#x8005;&#x66F4;&#x65B0;&#x3002;</li>
+</ul>
+<h2 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h2>
+<p>&#x6211;&#x8FD8;&#x6CA1;&#x4F53;&#x4F1A;&#x5230;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x505A;&#x8BC4;&#x4EF7;</p>
+<h1 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h1>
+<p>&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x8BDD;&#x9898;&#xFF0C;&#x7F51;&#x4E0A;&#x6587;&#x7AE0;&#x633A;&#x591A;&#x7684;&#xFF0C;&#x89C2;&#x70B9;&#x4E0A;&#x53EF;&#x80FD;&#x4E5F;&#x6709;&#x8BF8;&#x591A;&#x5206;&#x6B67;&#x3002;&#x91CD;&#x590D;&#x9020;&#x8F6E;&#x5B50;&#xFF0C;&#x7EAF;&#x5C5E;&#x5E2E;&#x52A9;&#x81EA;&#x5DF1;&#x52A0;&#x6DF1;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x672C;&#x4EBA;&#x6C34;&#x5E73;&#x6709;&#x9650;&#xFF0C;&#x4EE5;&#x4E0A;&#x4EC5;&#x662F;&#x4E2A;&#x4EBA;&#x89C2;&#x70B9;&#xFF0C;&#x5982;&#x6709;&#x9519;&#x8BEF;&#x4E4B;&#x5904;&#xFF0C;&#x8FD8;&#x8BF7;&#x65A7;&#x6B63;&#xFF01;&#x5982;&#x679C;&#x80FD;&#x5E2E;&#x5230;&#x60A8;&#x7406;&#x89E3;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x548C;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#xFF0C;&#x975E;&#x5E38;&#x8363;&#x5E78;&#xFF01;</p>
+<p>&#x5982;&#x679C;&#x6709;&#x5174;&#x8DA3;&#x770B;&#x770B;&#x6211;&#x8FD9;&#x7CDF;&#x7CD5;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8BF7;&#x70B9;&#x51FB;<a href="https://github.com/cumt-robin/just-demos" target="_blank">github</a>&#xFF0C;&#x795D;&#x5927;&#x5BB6;&#x751F;&#x6D3B;&#x6109;&#x5FEB;&#xFF01;</p>
+<hr>
+<p><a href="https://juejin.im/post/5df1a9906fb9a0163a482e53" target="_blank">&#x9996;&#x53D1;&#x94FE;&#x63A5;</a></p>
+<p><img src="https://qncdn.wbjiang.cn/yuanchudao_poster1.png" alt="&#x6B22;&#x8FCE;&#x5173;&#x6CE8;"></p>
+<p><div id="gitalk-container"></div></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+    clientID: "c17498a9a9fa6e17b36a",
+    clientSecret: "556df0480f8f48e142432f50273ea149cf206c07",
+    repo: "FE-learning",
+    owner: "cumt-robin",
+    admin: ["cumt-robin"],
+    id: decodeURIComponent(location.pathname)
+});
+gitalk.render("gitalk-container");
+</script>
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"从一道面试题简单谈谈发布订阅和观察者模式","level":"3.3.1","depth":2,"next":{"title":"架构","level":"3.4","depth":1,"ref":"","articles":[{"title":"前端API层架构，也许你做得还不够","level":"3.4.1","depth":2,"path":"doc/前端API层架构也许你做得还不够.md","ref":"doc/前端API层架构也许你做得还不够.md","articles":[]}]},"previous":{"title":"设计模式","level":"3.3","depth":1,"ref":"","articles":[{"title":"从一道面试题简单谈谈发布订阅和观察者模式","level":"3.3.1","depth":2,"path":"doc/从一道面试题简单谈谈发布订阅和观察者模式.md","ref":"doc/从一道面试题简单谈谈发布订阅和观察者模式.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-learning"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Tutorial For Front End Engineer","language":"zh-hans","links":{"sidebar":{"Tusi博客":"https://blog.wbjiang.cn","Tusi博客Hexo版":"http://hexo.wbjiang.cn/","掘金专栏":"https://juejin.im/user/5ca40a18f265da30b8178b31/posts","个人整理的前端知识树(提取码wqgg)":"https://pan.baidu.com/s/1ns_xy2mV1Q49K9-GmUQmDA"}},"gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"doc/从一道面试题简单谈谈发布订阅和观察者模式.md","mtime":"2020-01-20T03:44:10.999Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-20T06:31:15.414Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
