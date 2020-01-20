@@ -80,7 +80,7 @@ JS引擎
 
 [发布一个简单的npm包](http://hexo.wbjiang.cn/%E5%8F%91%E5%B8%83%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84npm%E5%8C%85.html)
 
-# 跨平台
+# :airplane: 跨平台
 
 ## Hybrid
 
@@ -92,13 +92,13 @@ JS引擎
 
 [如何判断IE OCX插件正常安装](http://hexo.wbjiang.cn/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%ADIE%20OCX%E6%8F%92%E4%BB%B6%E6%AD%A3%E5%B8%B8%E5%AE%89%E8%A3%85%EF%BC%9F.html)
 
-# 版本管理
+# :clipboard: 版本管理
 
 ## Git
 
 [Gerrit常见命令及最佳实践](https://juejin.im/post/5d7f010351882501501106f3)
 
-# 部署/运维
+# :wrench: 部署/运维
 
 ## shell
 
