@@ -4,11 +4,7 @@
 
 [个人吐血整理的前端知识树，提取码wqgg](https://pan.baidu.com/s/1ns_xy2mV1Q49K9-GmUQmDA)
 
-This is a tutorial for frontend engineers written by Tusi.
-
-You can open the link and click the menu icon for more chapters.
-
-I would be honored if this book could help you.
+这里面大部分是我自己原创的文章，还有一些我觉得很有学习价值的文章，在这里与大家一起分享了。弱弱地求个`star`，谢谢了！可以加我微信交流，微信号`ice_lloly`
 
 # :camera: 前端基础知识
 
@@ -42,7 +38,7 @@ I would be honored if this book could help you.
 
 [sea.js的同步魔法](https://juejin.im/post/5d637342518825168e6a16d4)
 
-[可能是最详细的UMD模块入门指南](https://juejin.im/post/5d6769d05188250d9432aa7f)
+:thumbsup: [可能是最详细的UMD模块入门指南](https://juejin.im/post/5d6769d05188250d9432aa7f)
 
 ## 原理性知识
 
@@ -58,7 +54,7 @@ JS引擎
 
 ### Vue
 
-[vue项目中引入iconfont](https://juejin.im/post/5d25bca351882557d44c8a85)
+:thumbsup: [vue项目中引入iconfont](https://juejin.im/post/5d25bca351882557d44c8a85)
 
 [vue作用域插槽，你真的懂了吗](https://juejin.im/post/5ca412c7f265da30a726e76b)
 
@@ -68,9 +64,7 @@ JS引擎
 
 ## 架构
 
-[前端API层架构，也许你做得还不够](https://juejin.im/post/5de7169451882512454b18d8)
-
-[用初中数学知识撸一个canvas环形进度条](https://juejin.im/post/5dc626125188253aec025a60)
+:thumbsup: [前端API层架构，也许你做得还不够](https://juejin.im/post/5de7169451882512454b18d8)
 
 ## 编译相关
 
@@ -80,6 +74,12 @@ JS引擎
 
 [发布一个简单的npm包](http://hexo.wbjiang.cn/%E5%8F%91%E5%B8%83%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84npm%E5%8C%85.html)
 
+:thumbsup: [用初中数学知识撸一个canvas环形进度条](https://juejin.im/post/5dc626125188253aec025a60)
+
+## 浏览器问题
+
+[如何判断IE OCX插件正常安装](http://hexo.wbjiang.cn/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%ADIE%20OCX%E6%8F%92%E4%BB%B6%E6%AD%A3%E5%B8%B8%E5%AE%89%E8%A3%85%EF%BC%9F.html)
+
 # :airplane: 跨平台
 
 ## Hybrid
@@ -87,10 +87,6 @@ JS引擎
 [cordova开发环境搭建](http://hexo.wbjiang.cn/cordova%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html)
 
 [ionic初体验](https://juejin.im/post/5dc152006fb9a04aaf40a013)
-
-## 浏览器hack
-
-[如何判断IE OCX插件正常安装](http://hexo.wbjiang.cn/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%ADIE%20OCX%E6%8F%92%E4%BB%B6%E6%AD%A3%E5%B8%B8%E5%AE%89%E8%A3%85%EF%BC%9F.html)
 
 # :clipboard: 版本管理
 
@@ -102,4 +98,10 @@ JS引擎
 
 ## shell
 
-[自动化部署的一小步，前端搬砖的一大步](https://juejin.im/post/5e206168f265da3e2b2d7560)
+:thumbsup: [自动化部署的一小步，前端搬砖的一大步](https://juejin.im/post/5e206168f265da3e2b2d7560)
+
+:thumbsup: [linux下详解shell中>/dev/null 2>&1](https://www.cnblogs.com/ultranms/p/9353157.html)
+
+> 我是**Tusi**，一个创业公司前端小leader，每天依然为写不完的业务代码烦恼，在打磨产品道路上沉淀技术，探索成长路线。如果你与我一样，正在思考自己的技术成长与价值，欢迎加我微信交流探讨，微信号**ice_lloly**。我会在公众号**猿出道**和小程序**Tusi博客**同步博客内容，快来撩我！
+
+![欢迎关注我的公众号](https://qncdn.wbjiang.cn/yuanchudao_poster1.png)

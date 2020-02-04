@@ -1,12 +1,13 @@
 {
   "name": "fe-learning",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "This is a tutorial for most front end engineer written by Tusi.",
   "main": "index.js",
   "scripts": {
     "start": "gitbook serve",
     "build": "gitbook build",
     "postbuild": "node copy",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/cumt-robin/FE-learning/issues"
   },
-  "homepage": "https://github.com/cumt-robin/FE-learning#readme"
+  "homepage": "https://github.com/cumt-robin/FE-learning#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
