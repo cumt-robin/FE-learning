@@ -92,6 +92,8 @@ JS引擎
 
 ## Git
 
+:thumbsup: [Git 最佳实践：分支管理](https://yq.aliyun.com/articles/612492)
+
 [Gerrit常见命令及最佳实践](https://juejin.im/post/5d7f010351882501501106f3)
 
 # :wrench: 部署/运维
@@ -101,6 +103,12 @@ JS引擎
 :thumbsup: [自动化部署的一小步，前端搬砖的一大步](https://juejin.im/post/5e206168f265da3e2b2d7560)
 
 :thumbsup: [linux下详解shell中>/dev/null 2>&1](https://www.cnblogs.com/ultranms/p/9353157.html)
+
+## 容器化技术
+
+:thumbsup: [干货满满！10分钟看懂Docker和K8S](https://my.oschina.net/jamesview/blog/2994112)
+
+:thumbsup: [为什么需要Docker](https://cloud.tencent.com/developer/article/1578983)
 
 > 我是**Tusi**，一个创业公司前端小leader，每天依然为写不完的业务代码烦恼，在打磨产品道路上沉淀技术，探索成长路线。如果你与我一样，正在思考自己的技术成长与价值，欢迎加我微信交流探讨，微信号**ice_lloly**。我会在公众号**猿出道**和小程序**Tusi博客**同步博客内容，快来撩我！
 
